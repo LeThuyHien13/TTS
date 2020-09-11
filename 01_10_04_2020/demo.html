@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LandingPage</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="resouces/css/stylesheet.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="resouces/css/silideshow.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <!-- header start -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#"><i class="	far fa-envelope"></i>run01@runtime.vn</a></li>
+                    <li><a href="#"><i class="	fas fa-phone"></i>0908 77 00 95</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Đăng ký/Đăng nhập</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                      <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href=""><img src="./resouces/Images/logo.png" alt=""></a>
+                </div>
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="#">Trang chủ </a></li>
+                    <li><a href="#">Giới thiệu </a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        sản phẩm<i class="fas fa-angle-down"></i> </a>
+                    </li>
+                    <li><a href="#">Tin tức  </a></li>
+                    <li><a href="#">Liên hệ </a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping">Giỏ hàng:0</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- Start container -->
+    <section class="container-fluid">
+        <div class="content"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col span-1-of-4 ">
+                    <ul style="border: 1px solid rgb(216, 210, 210);">
+                        <li><a style="background-color:rgb(192, 187, 187)" href="#"><i class="fas fa-list-ul"></i><b>DANH MỤC</b></a></li>
+                        <li class="list"><a href="#"><i class="fas fa-female"></i>Tất cả <i class="	fas fa-angle-right"></i></a></li>
+                        <li class="list"><a href="#"><i class="fas fa-utensils"></i>Thực phẩm  <i class="fas fa-angle-right"></i> </a></li>
+                        <li class="list"><a href="#"><i class="fas fa-camera"></i>Điện tử<i class="	fas fa-angle-right"></i></a></li>
+                        <li class="list"><a href="#"><i class="fas fa-suitcase"></i>Nội thất<i class="fas fa-angle-right"></i></a></li>
+                        <li class="list"><a href="#"><i class="far fa-heart"></i>Nữ trang<i class="	fas fa-angle-right"></i></a></li>
+                        <li class="list"><a href="#"><i class="fas fa-heart"></i>Mỹ phẩm <i class="	fas fa-angle-right"></i></a></li>
+                        <li class="list"><a href="#"><i class="fas fa-gift"></i>Quà tặng <i class="	fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <img src="./resouces/Images/banner_img_1.jpg" alt="banner01">
+                    <img src="./resouces/Images/banner_img_2.jpg" alt="banner02">
+                </div>
+                <div class="col span-2-of-4 ">
+                    <!-- ---------------------- -->
+                    <!-- ----SLIDER-1 -->
+                    <!-- ---------------- -->
+                    <center class="slide-show">
+                        <img src="./resouces/Images/slideshow_1.jpg" alt="" class="mySlides fade">
+                        <img src="./resouces/Images/slideshow_2.jpg" alt="" class="mySlides fade">
+                        <img src="./resouces/Images/slideshow_3.jpg" alt="" class="mySlides fade">
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </center>
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
+                    <!-- -------------- -->
+                    <!-- -----SLIDER-2--------- -->
+                    <!-- ------------------------ -->
+                    <div class="show">
+                        <div class="Slides">
+                            <center class="slide-detail">
+                                <div class="slide-detail-top">
+                                    <h3 style="text-transform: uppercase;font-size: 15px">Ưu đãi lớn</h3>
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </center>
+                            <div class="slide-detail-bottom">
+                                <div class="left">
+                                    <img style="width: 40%" src="./resouces/Images/products/ao-belike1_master.jpg" alt="">
+                                    <div class="Discount "> -52% </div>
+                                </div>
+                                <div class="right">
+                                    <h6><b>Áo thun nữ Belike</b></h6><br>
+                                    <p><strike>200.000<u>đ</u></strike> 95.200<u>đ</u><br>
+                                    </p>
+                                    Trẻ trung và cuốn hút theo phong cách<br> đường phố thu đông với áo nỉ thêu hình <br> động vật của thương hiệu Asos-Chất liệu <br> cotton pha -Cổ 3cm-Tay dài,suông-Không<br> lót trong -Màu sắc :xám.Hướng dẫn sử<br>                                    dụng:-Giặt bằng tay với nhiệt độ không <br> quá 30 C-Không được tẩy -Không được<br> sấy khô -Ủi với nhiệt độ ..
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Slides">
+                            <center class="slide-detail">
+                                <div class="slide-detail-top">
+                                    <h3 style="text-transform: uppercase;font-size: 15px">Ưu đãi lớn</h3>
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </center>
+                            <div class="slide-detail-bottom">
+                                <div class="left">
+                                    <img style="width: 40%" src="./resouces/Images/products/ao-somi-2_master.jpg" alt="">
+                                    <div class="Discount "> -52% </div>
+                                </div>
+                                <div class="right">
+                                    <h6><b>Áo sơ mi</b></h6><br>
+                                    <p><strike>200.000<u>đ</u></strike> 95.200<u>đ</u><br>
+                                    </p>
+                                    Trẻ trung và cuốn hút theo phong cách<br> đường phố thu đông với áo nỉ thêu hình <br> động vật của thương hiệu Asos-Chất liệu <br> cotton pha -Cổ 3cm-Tay dài,suông-Không<br> lót trong -Màu sắc :xám.Hướng dẫn sử<br>                                    dụng:-Giặt bằng tay với nhiệt độ không <br> quá 30 C-Không được tẩy -Không được<br> sấy khô -Ủi với nhiệt độ ..
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Slides">
+                            <center class="slide-detail">
+                                <div class="slide-detail-top">
+                                    <h3 style="text-transform: uppercase;font-size: 15px">Ưu đãi lớn</h3>
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </center>
+                            <div class="slide-detail-bottom">
+                                <div class="left">
+                                    <img style="width: 40%" src="./resouces/Images/products/ao-yem-1_master.jpg" alt="">
+                                    <div class="Discount "> -52% </div>
+                                </div>
+                                <div class="right">
+                                    <h6><b>Áo yếm</b></h6><br>
+                                    <p><strike>200.000<u>đ</u></strike> 95.200<u>đ</u><br>
+                                    </p>
+                                    Trẻ trung và cuốn hút theo phong cách<br> đường phố thu đông với áo nỉ thêu hình <br> động vật của thương hiệu Asos-Chất liệu <br> cotton pha -Cổ 3cm-Tay dài,suông-Không<br> lót trong -Màu sắc :xám.Hướng dẫn sử<br>                                    dụng:-Giặt bằng tay với nhiệt độ không <br> quá 30 C-Không được tẩy -Không được<br> sấy khô -Ủi với nhiệt độ ..
+
+                                </div>
+                            </div>
+                        </div>
+                        <center class="date">
+                            <script>
+                                var myVar = setInterval(function() {
+                                    myTimer()
+                                }, 1000);
+
+                                function myTimer() {
+                                    var d = new Date();
+                                    var t = d.toLocaleTimeString();
+                                    document.getElementById("h").innerHTML = t;
+                                }
+                            </script>
+                            <span id="h"></span>
+                            <script type="text/javascript">
+                                n = new Date();
+                                if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000);
+                                else t = n.getTime();
+                                n.setTime(t);
+                            </script>
+                        </center>
+
+                    </div>
+                    <!-- ---------- -->
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusSlides(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("Slides");
+                            if (n > x.length) {
+                                slideIndex = 1
+                            }
+                            if (n < 1) {
+                                slideIndex = x.length
+                            }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+                    <!-- --------------------------- -->
+
+
+
+                </div>
+                <div class="col span-1-of-4 ">
+                    <div class=" menu-right-top">
+                        <ul style="border: 1px solid rgb(216, 210, 210);">
+                            <li class="list"> <a href="#">Sản phẩm khuyến mãi </a></li>
+                            <li class="list">
+                                <a href="#"><img style="width: 40%" src="./resouces/Images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg" alt="Serum">
+                                    <div class="product">
+                                        Son môi itachi<br>
+                                        <p><strike>600.000<u>đ</u></strike> 500.000<u>đ</u></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#"><img style="width: 40%" src="./resouces/Images/products/1200_6_451_master.jpg" alt="">
+                                    <div class="product">
+                                        Bikini bi áo lửng<br>
+                                        <p><strike>600.000<u>đ</u></strike> 450.000<u>đ</u></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#"><img style="width: 40%" src="./resouces/Images/products/ao-belike1_master.jpg" alt="">
+                                    <div class="product">
+                                        Áo thun nữ Belike<br>
+                                        <p><strike>200.000<u>đ</u></strike> 95.200<u>đ</u></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#"><img style="width: 40%" src="./resouces/Images/products/pr9_80450716-2b66-4b4b-76ed-5c1534a804fa_master.jpg" alt="">
+                                    <div class="product">
+                                        Mascara<br>
+                                        <p><strike>100.000<u>đ</u></strike> 50.000<u>đ</u></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" menu-right-bottom">
+                        <h6 style=" text-transform: uppercase;">Đăng ký nhận tin</h6>
+                        <input type="email" name="mail" id="mail" placeholder="Email của bạn" style="size:10px"><br>
+                        <input type="button" value="Đăng ký ">
+                    </div>
+                </div>
+            </div>
+            <!-- EndContent -->
+            <img src="./resouces/Images/banner_home_img.jpg" alt="baner-home">
+            <!-- Start menu-section -->
+            <div class="menu-top">
+                <div class="menu-section">
+                    <ul class="menu-section-top">
+                        <li>
+                            <a>
+                                <i class="fas fa-female" style="background-color:yellow;padding:15px;margin:10px 15px "></i><b>THỜI TRANG</b>
+                            </a>
+                        </li>
+                        <li><a class="active" href="#">Tất cả </a></li>
+                        <li><a href="#">Áo sơ mi </a></li>
+                        <li><a href="#">Áo </a></li>
+                        <li><a href="#">Túi </a></li>
+                        <li><a href="#">Trang phục </a></li>
+                        <li><a href="#">Phụ kiện </a></li>
+                    </ul>
+                </div>
+                <div class="content-colthes ">
+                    <div class=" about-picture ">
+                        <img src="./resouces/Images/products/ao-somi-2_master.jpg" alt=" ">
+                        <div class="Discount ">
+                            hot
+                        </div>
+                        <h6>Áo sơ mi nữ VNXK </h6>
+                        <p>280.000<u>đ</u> </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/ao-belike1_master.jpg" alt=" ">
+                        <div class="Discount "> -52% </div>
+                        <h6>Áo thun nữ Belike</h6>
+                        <p> 95.200<u>đ</u>
+                            <strike>200.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/ao-yem-1_master.jpg " alt=" ">
+                        <div class="Discount ">hot</div>
+                        <h6>Áo kiểu nữ cổ yếm </h6>
+                        <p> 199.000<u>đ</u></p>
+                    </div>
+                </div>
+                <div class="content-colthes ">
+                    <div class=" about-picture ">
+                        <img src="./resouces/Images/products/1200_6_451_master.jpg" alt=" ">
+                        <div class="Discount ">-25%</div>
+                        <h6>Bikini bi áo lửng </h6>
+                        <p> 450.000<u>đ</u>
+                            <strike>600.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/2_44_90_master.jpg" alt=" ">
+                        <div class="Discount ">hot</div>
+                        <h6>Áo dài cách tân </h6>
+                        <p> 169.000<u>đ</u></p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/1200_17_67_master.jpg" alt=" ">
+                        <div class="Discount ">hot</div>
+                        <h6>Áo thun nữ Love Heart </h6>
+                        <p> 250.000<u>đ</u></p>
+                    </div>
+                </div>
+                <div class="section-right ">
+                    <img src="./resouces/Images/products/tabs_1_slider_img_1.jpg " alt=" ">
+                </div>
+
+            </div>
+            <!-- ----------Start menu-bottom -->
+            <div class="menu-bottom">
+                <div class="menu-section">
+                    <ul class="menu-section-bottom">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-female" style="background-color:palevioletred;padding:15px;margin:10px 15px "></i> <b>MỸ PHẨM</b>
+                            </a>
+                        </li>
+                        <li><a class="active" href="#">Tất cả </a></li>
+                        <li><a href="#">Kem dưỡng ẩm </a></li>
+                        <li><a href="#">Son môi</a></li>
+                        <li><a href="#">Sơn móng tay </a></li>
+                        <li><a href="#">Trang điểm </a></li>
+                        <li><a href="#">Dưỡng tóc  </a></li>
+                    </ul>
+                </div>
+                <div class="content-colthes ">
+                    <div class=" about-picture ">
+                        <img src="./resouces/Images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg" alt=" ">
+                        <div class="Discount ">
+                            -17%
+                        </div>
+                        <h6>Son môi itachi </h6>
+                        <p>500.000<u>đ</u>
+                            <strike>600.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/pr9_80450716-2b66-4b4b-76ed-5c1534a804fa_master.jpg" alt=" ">
+                        <div class="Discount "> -50% </div>
+                        <h6>Mascara dầy và cong</h6>
+                        <p> 50.000<u>đ</u>
+                            <strike>100.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/pr10_18fd8cae-14f6-4d70-40b5-5fde4db1df12_master.jpg" alt=" ">
+                        <div class="Discount ">-50%</div>
+                        <h6>Son môi TPA-115 </h6>
+                        <p> 125.000<u>đ</u>
+                            <strike>250.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-colthes ">
+                    <div class=" about-picture ">
+                        <img src="./resouces/Images/products/pr12_6e6ab775-622b-43ae-43c9-08796dd0c9e2_master.jpg" alt=" ">
+                        <div class="Discount ">-50%</div>
+                        <h6>Son bóng hồng </h6>
+                        <p> 100.000<u>đ</u>
+                            <strike>200.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/pr8_master.jpg" alt=" ">
+                        <div class="Discount ">hot</div>
+                        <h6>Nước làm trắng da SG </h6>
+                        <p> 200.000<u>đ</u></p>
+                    </div>
+                    <div class="about-picture ">
+                        <img src="./resouces/Images/products/pr11_40e951b1-7be3-4f65-4bb8-fc9c1902e6d1_master.jpg" alt=" ">
+                        <div class="Discount ">-11%</div>
+                        <h6>Phấn trang điểm AUG</h6>
+                        <p> 400.000<u>đ</u>
+                            <strike>450.000<u>đ</u></strike>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-right ">
+                    <img src="./resouces/Images/tabs_2_slider_img_3.jpg" alt=" ">
+                </div>
+            </div>
+            <div class="logo">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_2.png" alt="">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_3.png" alt="">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_4.png" alt="">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_5.png" alt="">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_6.png" alt="">
+                <img class="col-sm-2" src="./resouces/Images/partner_img_7.png" alt="">
+            </div>
+        </div>
+        </div>
+        <!-- End menu-section -->
+    </section>
+    <!-- ---start footer ---->
+    <footer>
+        <!-- <div class="footer-top"> -->
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="col-sm-4">
+                    <img style="width: 50px;margin-left : 100px;padding-right:15px;margin-top:10px;border-right: 1px solid gray;" src="./resouces/Images/support_img_1.png" alt="">
+                    <div class="support">
+                        <ul>
+                            <li>24/7</li>
+                            <li style="color:gray">Hỗ trợ miễn phí</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img style="width: 50px;margin-left : 100px;padding-right:15px;margin-top:10px;border-right: 1px solid gray;" src="./resouces/Images/support_img_2.png" alt="">
+                    <div class="support">
+                        <ul>
+                            <li>100% HOÀN TIỀN </li>
+                            <li style="color:gray">Bảo hành</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img style="width: 50px;margin-left : 100px;margin-top:10px;padding-right:15px;border-right: 1px solid gray;" src="./resouces/Images/support_img_3.png" alt="">
+                    <div class="support">
+                        <ul>
+                            <li>MIỄN PHÍ SHIPPING </li>
+                            <li style="color:gray">Trên 5 đơn hàng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-sm-3">
+                    <h5>Về chúng tôi</h5>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Giao hàng-Đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo mật </a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-3">
+                    <h5>Trợ giúp </h5>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua  hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Tài khoản giao dịch </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i>Google Plus</a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-flickr"></i>Flickr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Hãy đến với chúng tôi</h5>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <span>  Copyright @ Big Market.Powered by RUNTIME.VN     
+            </span>
+            <img src="./resouces/Images/payment-logo.png" alt="Payment">
+        </div>
+    </footer>
+    <!-- -----------end footer -->
+</body>
+
+</html>v

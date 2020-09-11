@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* --------------------SLIDER-1------------ */
+
+.slide-show {
+    position: relative;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    height: 320px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    /* margin-top: -22px; */
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    padding: 6px;
+    margin: 0 2px;
+    /* position: absolute; */
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* ----------------------- */
+
+
+/* ----------------SLIDE-2----------------- */
+
+
+/* ----------------------------------- */
+
+.show {
+    border: 1px solid rgb(216, 210, 210);
+    height: 445px;
+}
+
+.slide-detail {
+    position: relative;
+}
+
+.slide-detail-top {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+}
+
+.slide-detail-top .prev,
+.next {
+    top: 0px;
+    padding: 13px;
+}
+
+.slide-detail-top:after {
+    content: " ";
+    display: block;
+    width: 450px;
+    height: 1px;
+    background-color: rgb(216, 210, 210);
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.slide-detail-bottom {
+    position: relative;
+}
+
+.slide-detail-bottom img {
+    margin-left: 20px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.Discount {
+    position: absolute;
+    background-color: red;
+    /* font-size: 15px; */
+    top: 60px;
+    left: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.left {
+    float: left;
+    height: 300px;
+    /* width: 60px; */
+    background-color: brown;
+}
+
+.right {
+    margin-top: 35px;
+    margin-right: 30px;
+    float: right;
+    height: 300px;
+}
+
+.date {
+    /* position: absolute; */
+    margin-top: 350px;
+    margin-left: 270px;
+}
